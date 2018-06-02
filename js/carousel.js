@@ -27,7 +27,7 @@ function moveToSelected(element) {
 }
 
 // Eventos teclado
-$(/index.html).keydown(function(e) {
+$(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left
         moveToSelected('prev');
