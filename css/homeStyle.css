@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  height: 100%;
 }
 
 /* Header Style */
@@ -12,13 +11,13 @@ body {
   padding: 20px;
   background-color: orange;
   text-align: center;
+  height: 20%;
 }
 
 /*Create the three main panels */
 .column {
   float: left;
   padding: 10px;
-  min-height: 50%;
 }
 
 .column.side {
@@ -35,6 +34,7 @@ body {
   content: "";
   display: table;
   clear: both;
+  height: 70%;
 }
 
 /* Create space for appLabel */
@@ -42,6 +42,7 @@ body {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
+  height: 20%;
 }
 
 /* Create space for footer */
@@ -49,6 +50,7 @@ body {
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
+    height: 10%;
 }
 
 /* Get max screen size */
