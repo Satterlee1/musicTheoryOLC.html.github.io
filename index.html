@@ -1,107 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/carousel.css"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script>
-      function moveToSelected(element) {
+<html lang="en">
+<head>
+  <title>Music Theory Open-Learning Center</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-          if (element == "next") {
-            var selected = $(".selected").next();
-          } else if (element == "prev") {
-            var selected = $(".selected").prev();
-          } else {
-            var selected = element;
-          }
+<div class="container">
+  <h2>What would you like to do?</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-          var next = $(selected).next();
-          var prev = $(selected).prev();
-          var prevSecond = $(prev).prev();
-          var nextSecond = $(next).next();
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
 
-          $(selected).removeClass().addClass("selected");
-
-          $(prev).removeClass().addClass("prev");
-          $(next).removeClass().addClass("next");
-
-          $(nextSecond).removeClass().addClass("nextRightSecond");
-          $(prevSecond).removeClass().addClass("prevLeftSecond");
-
-          $(nextSecond).nextAll().removeClass().addClass('hideRight');
-          $(prevSecond).prevAll().removeClass().addClass('hideLeft');
-
-        }
-
-        // Eventos teclado
-        $(document).keydown(function(e) {
-            switch(e.which) {
-                case 37: // left
-                moveToSelected('prev');
-                break;
-
-                case 39: // right
-                moveToSelected('next');
-                break;
-
-                default: return;
-            }
-            e.preventDefault();
-        });
-
-        $('#carousel div').click(function() {
-          moveToSelected($(this));
-        });
-
-        $('#prev').click(function() {
-          moveToSelected('prev');
-        });
-
-        $('#next').click(function() {
-          moveToSelected('next');
-        });
-
-      </script>
-    <title>Music Theory Open-Learning Center</title>
-  </head>
-
-    <main>
-
-      <div id="carousel">
-
-         <div class="hideLeft">
-          <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+      <div class="item active">
+        <img src="http://www.teliostutors.com/wp-content/uploads/2016/11/music-theory.jpg" alt="Theory Workbook" style="width:50%;">
+        <div class="carousel-caption">
+          <h3>Theory Workbook</h3>
+          <p>Practise your theory</p>
         </div>
-
-        <div class="prevLeftSecond">
-          <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-        </div>
-
-        <div class="prev">
-          <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-        </div>
-
-        <div class="selected">
-          <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-        </div>
-
-        <div class="next">
-          <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-        </div>
-
-        <div class="nextRightSecond">
-          <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-        </div>
-
-        <div class="hideRight">
-          <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-        </div>
-
       </div>
 
-      <div class="buttons">
-        <button id="prev">Prev</button>
-        <button id="next">Next</button>
+      <div class="item">
+        <img src="https://crosseyedpianist.files.wordpress.com/2011/06/listenup.jpg?w=720" alt="Aural Practice" style="width:50%;">
+        <div class="carousel-caption">
+          <h3>Aural Practice</h3>
+          <p>Intervals, Scales, Chords</p>
+        </div>
       </div>
-    </main>
+
+      <div class="item">
+        <img src="https://lejames.ca/sites/default/files/page/images/textbooks_library400.jpg" alt="Text Books" style="width:50%;">
+        <div class="carousel-caption">
+          <h3>Theory Lessons</h3>
+          <p>Learn the next BIG IDEA</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</body>
 </html>
