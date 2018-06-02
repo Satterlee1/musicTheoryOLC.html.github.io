@@ -52,8 +52,8 @@ body {
 }
 
 /* Get max screen width */
-@media screen and (max-width: 600px) {
-.column.side, .column.middle {
+@media screen and (max-width: 600pc) {
+  .column.side, .column.middle {
     width: 100%;
   }
 }
