@@ -50,3 +50,10 @@ body {
   background-color: blue;
   text-align: left;
 }
+
+/* Get max screen width */
+@media screen and (max-width: 600px) {
+.column.side, .column.middle {
+    width: 100%;
+  }
+}
