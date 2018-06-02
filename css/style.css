@@ -84,10 +84,8 @@ html, body, main {
   bottom: 10px;
 }
 
-#carousel div.carousel-caption {
+#carousel div.caption {
   position: absolute;
   bottom: 200 px;
-  position; relative;
-  left: 50%;
   font-size: x-large;
 }
