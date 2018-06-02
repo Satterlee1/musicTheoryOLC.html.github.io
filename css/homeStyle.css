@@ -53,9 +53,13 @@ body {
   text-align: left;
 }
 
-/* Get max screen width */
+/* Get max screen size */
 @media screen and (max-width: 600pc) {
   .column.side, .column.middle {
     width: 100%;
   }
+}
+
+.header, .column, .appLabel, .footer {
+  width: 100%;
 }
