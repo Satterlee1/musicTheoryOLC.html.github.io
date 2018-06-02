@@ -83,3 +83,8 @@ html, body, main {
   transform: translateX(-50%);
   bottom: 10px;
 }
+
+.h2 {
+  position: absolute;
+  bottom: auto;
+}
