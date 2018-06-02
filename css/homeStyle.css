@@ -22,10 +22,12 @@ body {
 .column.side {
   width: 15%;
   background-color: tomato;
+  content: ""
   }
 
 .column.middle {
-  width: 70%;
+  min-width: 70%;
+  max-width: 100%;
   background-color: lightgreen;
 }
 
