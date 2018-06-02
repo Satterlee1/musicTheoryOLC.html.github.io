@@ -38,18 +38,16 @@ body {
 
 /* Create space for appLabel */
 .appLabel {
-  display: block;
-  width: 100%;
-  max-height: 10%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
 
 /* Create space for footer */
 .footer {
-  width: 100%;
-  max-height: 10%;
-  float: left;
-  background-color: blue;
-  text-align: left;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
 }
 
 /* Get max screen size */
