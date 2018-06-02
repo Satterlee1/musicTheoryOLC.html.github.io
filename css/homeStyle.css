@@ -51,7 +51,7 @@ body {
 }
 
 /* Get max screen size */
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 2400px) {
   .column.side, .column.middle {
     width: 100%;
   }
