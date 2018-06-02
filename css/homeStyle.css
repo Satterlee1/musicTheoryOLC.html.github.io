@@ -38,6 +38,7 @@ body {
 
 /* Create space for appLabel */
 .appLabel {
+  display: block;
   width: 100%;
   max-height: 10%;
 }
