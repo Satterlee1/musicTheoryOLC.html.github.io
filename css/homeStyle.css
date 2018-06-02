@@ -57,7 +57,7 @@ body {
 }
 
 @media screen {
-  .header, .row, .appLabel, .footer {
+  .header, .column .appLabel, .footer {
     height: 100%;
   }
 }
