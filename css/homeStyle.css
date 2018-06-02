@@ -1,34 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Header Style */
 .header {
-  max-width: 100%;
+  padding: 20px;
   background-color: orange;
   text-align: center;
 }
 
-.outsideColumn {
+/*Create the three main panels */
+.column {
+  padding-left: 10px;
+  float: left;
+  text-align: center;
+}
+
+.column.side {
   max-width: 15%;
-  float: left;
-  background-color: purple;
-  text-align: center;
-}
+  background-color: tomato;
+  }
 
-.insideColumn {
+.column.middle {
   max-width: 70%;
-  float: left;
-  background-color: green;
-  text-align: center;
+  background-color: lightgreen;
 }
 
-.row {
-  max-width: 100%;
-  float: left;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
+/* Create space for appLabel */
 .appLabel {
   max-width: 100%;
   float: left;
   text-align: center;
 }
 
+/* Create space for footer */
 .footer {
   max-width: 100%;
   float: left;
