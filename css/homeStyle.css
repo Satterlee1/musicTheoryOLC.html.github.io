@@ -3,3 +3,22 @@
   background-color: orange;
   text-align: center;
 }
+
+.outsideColumn {
+  max-width: 15%;
+  float: left;
+  background-color: purple;
+  text-align: center;
+}
+
+.insideColumn {
+  max-width: 70%;
+  float: left;
+  background-color: green;
+  text-align: center;
+}
+
+.row {
+  max-width: 100%;
+  float: left;
+}
