@@ -10,6 +10,7 @@ body {
 /* Style the header */
 .header {
     float: left;
+    width: 100%;
     padding: 30px;
     background-color: lavender;
     text-align: center;
