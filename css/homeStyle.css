@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  height: 100%;
 }
 
 /* Header Style */
@@ -54,11 +55,5 @@ body {
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
-  }
-}
-
-@media screen {
-  .header, .column .appLabel, .footer {
-    height: 100%;
   }
 }
