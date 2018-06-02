@@ -86,5 +86,5 @@ html, body, main {
 
 .h2 {
   position: absolute;
-  bottom: auto;
+  bottom: 10px;
 }
