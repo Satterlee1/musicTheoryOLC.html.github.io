@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
 }
 
 /* Header Style */
@@ -21,13 +26,11 @@ body {
 
 .column.side {
   width: 15%;
-  min-height: 50%;
   background-color: tomato;
   }
 
 .column.middle {
   width: 70%;
-  min-height: 50%;
   background-color: lightgreen;
 }
 
