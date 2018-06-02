@@ -22,3 +22,16 @@
   max-width: 100%;
   float: left;
 }
+
+.appLabel {
+  max-width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.footer {
+  max-width: 100%;
+  float: left;
+  background-color: blue;
+  text-align: left;
+}
